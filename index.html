@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    body{
+      background-color: white;
+    }
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    #ring{
+      border:2px solid orange;
+      width:760px;
+    }
+    #container{
+      background-color: black;
+      position: relative;
+      height: 11px;
+      width: 11px;
+      display: grid;
+      grid-template-columns:320px 198px 153px 62px;
+      gap: 9px;
+      grid-template-rows:414px 130px 155px 36px;
+      width:760px;
+      height: auto;
+    }
+    .red{
+      background-color: red;
+    }
+    .blue{
+      background-color: blue;
+    }
+    .yellow{
+      background-color: yellow;
+    }
+    .gray{
+      background-color: gray;
+    }
+    .white{
+      background-color: white;
+    }
+    .s2c{
+      grid-column: span 2;
+    }
+    .s3c{
+      grid-column: span 3;
+    }
+    .s2r{
+      grid-row: span 2;
+    }
+    .s3r{
+      grid-row: span 3;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div id="ring">
+    <div id="container">
+      <div class="red"></div>
+      <div class="white s3c"></div>
+      <div class="white s2r"></div>
+      <div class="white s2r s2c"></div>
+      <div class="blue"></div>
+      <div class="white s2r"></div>
+      <div class="white"></div>
+      <div class="yellow"></div>
+      <div class="gray"></div>
+    </div>
+  </div>
+</body>
+
+</html>
